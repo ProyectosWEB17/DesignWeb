@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DesignWeb - Desarrollo Web Profesional</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- AOS Library for Animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-900 text-gray-200">
+
+  <!-- Navbar -->
+  <nav class="bg-gray-800 text-white p-4 fixed w-full z-10 shadow-md">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">DesignWeb</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#inicio" class="hover:text-blue-400 transition">Inicio</a></li>
+        <li><a href="#servicios" class="hover:text-blue-400 transition">Servicios</a></li>
+        <li><a href="#tecnologias" class="hover:text-blue-400 transition">Tecnologías</a></li>
+        <li><a href="#contacto" class="hover:text-blue-400 transition">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="bg-cover bg-center h-screen text-center flex items-center justify-center" style="background-image: url('https://via.placeholder.com/1500x800');" data-aos="fade-right">
+    <div class="bg-black bg-opacity-70 p-8 rounded-lg">
+      <h1 class="text-4xl md:text-6xl font-bold text-white" data-aos="fade-right" data-aos-delay="200">Transformamos tu presencia online</h1>
+      <p class="text-gray-400 mt-4" data-aos="fade-right" data-aos-delay="400">Expertos en diseño web moderno, rápido y optimizado.</p>
+      <a href="#contacto" class="mt-6 inline-block bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition" data-aos="fade-right" data-aos-delay="600">Comienza Ahora</a>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="py-12 bg-gray-800">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-white mb-8" data-aos="fade-right">Nuestros Servicios</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300" data-aos="fade-right" data-aos-delay="200">
+          <h3 class="text-2xl font-semibold text-blue-400">Diseño Web Profesional</h3>
+          <p class="mt-2 text-gray-400">Creamos sitios web modernos, responsivos y optimizados para tu negocio.</p>
+        </div>
+        <div class="bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300" data-aos="fade-right" data-aos-delay="400">
+          <h3 class="text-2xl font-semibold text-blue-400">Soporte y Mantenimiento</h3>
+          <p class="mt-2 text-gray-400">Ofrecemos soporte técnico para mantener tu infraestructura en óptimo estado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tecnologías -->
+  <section id="tecnologias" class="bg-gray-900 py-12">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-white mb-8" data-aos="fade-right">Tecnologías</h2>
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-6 items-center justify-center">
+        <div class="bg-gray-800 p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300" data-aos="fade-right">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="w-16 h-16 mx-auto">
+          <p class="mt-2 font-semibold text-gray-300">HTML5</p>
+        </div>
+        <div class="bg-gray-800 p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300" data-aos="fade-right" data-aos-delay="200">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="w-16 h-16 mx-auto">
+          <p class="mt-2 font-semibold text-gray-300">CSS3</p>
+        </div>
+        <div class="bg-gray-800 p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300" data-aos="fade-right" data-aos-delay="400">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-16 h-16 mx-auto">
+          <p class="mt-2 font-semibold text-gray-300">JavaScript</p>
+        </div>
+        <div class="bg-gray-800 p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300" data-aos="fade-right" data-aos-delay="600">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-16 h-16 mx-auto">
+          <p class="mt-2 font-semibold text-gray-300">Python</p>
+        </div>
+        <div class="bg-gray-800 p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300" data-aos="fade-right" data-aos-delay="800">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="w-16 h-16 mx-auto">
+          <p class="mt-2 font-semibold text-gray-300">MySQL</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+<section id="contacto" class="py-12 bg-gray-800 text-white text-center">
+    <h2 class="text-3xl font-bold mb-6" data-aos="fade-right">Contáctanos</h2>
+    
+    <div class="flex justify-center items-center gap-6">
+      <!-- Botón de WhatsApp (Ícono Redondo) -->
+      <a href="https://wa.me/56942788245" target="_blank" 
+         class="bg-green-500 hover:bg-green-600 p-4 rounded-full shadow-md transition-transform transform hover:scale-110" 
+         data-aos="flip-left">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-10 h-10">
+      </a>
+  
+      <!-- Botón de Instagram (Ícono Redondo) -->
+      <a href="https://www.instagram.com/jose.armijo17" target="_blank" 
+         class="bg-pink-500 hover:bg-pink-600 p-4 rounded-full shadow-md transition-transform transform hover:scale-110" 
+         data-aos="flip-right" data-aos-delay="200">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="w-10 h-10">
+      </a>
+    </div>
+  </section>
+  
+  
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-400 text-center py-4" data-aos="fade-right">
+    <p>&copy; 2025 DesignWeb - Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+
+</body>
+</html>

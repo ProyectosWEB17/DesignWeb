@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DesignWeb - Desarrollo Web Profesional</title>
+  <title>TechPageDesigns - Desarrollo Web Profesional</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- AOS Library for Animations -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -11,44 +11,153 @@
 
 <body class="bg-gray-900 text-gray-200">
 
-  <!-- Navbar -->
-  <nav class="bg-gray-800 text-white p-4 fixed w-full z-10 shadow-md">
-    <div class="max-w-6xl mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold">DesignWeb</h1>
-      <ul class="flex space-x-6">
-        <li><a href="#inicio" class="hover:text-blue-400 transition">Inicio</a></li>
-        <li><a href="#servicios" class="hover:text-blue-400 transition">Servicios</a></li>
-        <li><a href="#tecnologias" class="hover:text-blue-400 transition">Tecnologías</a></li>
-        <li><a href="#contacto" class="hover:text-blue-400 transition">Contacto</a></li>
-      </ul>
-    </div>
-  </nav>
+  <!-- Navbar Actualizada -->
+<nav class="bg-gray-800 text-white p-4 fixed w-full z-20 shadow-md">
+  <div class="max-w-7xl mx-auto flex justify-between items-center">
+    <!-- Logo -->
+    <h1 class="text-2xl font-bold">TechPageDesign</h1>
+
+    <!-- Menú de Navegación (Escritorio) -->
+    <ul class="hidden md:flex space-x-6 text-sm font-medium">
+      <li><a href="#inicio" class="hover:text-blue-400 transition">Inicio</a></li>
+      <li><a href="#historia" class="hover:text-blue-400 transition">Nuestra Historia</a></li>
+      <li><a href="#soporte" class="hover:text-blue-400 transition">Soporte y Servicios</a></li>
+      <li><a href="#tecnologias" class="hover:text-blue-400 transition">Tecnologías</a></li>
+      <li><a href="#contacto" class="hover:text-blue-400 transition">Contacto</a></li>
+    </ul>
+
+    <!-- Menú para Móviles -->
+    <button id="menu-toggle" class="md:hidden focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Menú Desplegable para Móviles -->
+  <div id="mobile-menu" class="hidden bg-gray-700 p-4 space-y-2 md:hidden">
+    <a href="#inicio" class="block text-white hover:text-blue-400 transition">Inicio</a>
+    <a href="#historia" class="block text-white hover:text-blue-400 transition">Nuestra Historia</a>
+    <a href="#soporte" class="block text-white hover:text-blue-400 transition">Soporte y Servicios</a>
+    <a href="#tecnologias" class="block text-white hover:text-blue-400 transition">Tecnologías</a>
+    <a href="#contacto" class="block text-white hover:text-blue-400 transition">Contacto</a>
+  </div>
+</nav>
 
   <!-- Hero Section -->
   <section id="inicio" class="bg-cover bg-center h-screen text-center flex items-center justify-center" style="background-image: url('https://via.placeholder.com/1500x800');" data-aos="fade-right">
     <div class="bg-black bg-opacity-70 p-8 rounded-lg">
-      <h1 class="text-4xl md:text-6xl font-bold text-white" data-aos="fade-right" data-aos-delay="200">Transformamos tu presencia online</h1>
+      <h1 class="text-4xl md:text-6xl font-bold text-white" data-aos="fade-right" data-aos-delay="200">Haz tu sitio web personalizado y a tu gusto!</h1>
       <p class="text-gray-400 mt-4" data-aos="fade-right" data-aos-delay="400">Expertos en diseño web moderno, rápido y optimizado.</p>
       <a href="#contacto" class="mt-6 inline-block bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition" data-aos="fade-right" data-aos-delay="600">Comienza Ahora</a>
     </div>
   </section>
 
-  <!-- Servicios -->
-  <section id="servicios" class="py-12 bg-gray-800">
-    <div class="max-w-6xl mx-auto text-center">
-      <h2 class="text-3xl font-bold text-white mb-8" data-aos="fade-right">Nuestros Servicios</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300" data-aos="fade-right" data-aos-delay="200">
-          <h3 class="text-2xl font-semibold text-blue-400">Diseño Web Profesional</h3>
-          <p class="mt-2 text-gray-400">Creamos sitios web modernos, responsivos y optimizados para tu negocio.</p>
-        </div>
-        <div class="bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300" data-aos="fade-right" data-aos-delay="400">
-          <h3 class="text-2xl font-semibold text-blue-400">Soporte y Mantenimiento</h3>
-          <p class="mt-2 text-gray-400">Ofrecemos soporte técnico para mantener tu infraestructura en óptimo estado.</p>
-        </div>
+<!-- Nuestra Historia y Misión -->
+<section id="historia" class="py-12 bg-gray-900 text-gray-200">
+  <div class="max-w-6xl mx-auto px-4 space-y-16">
+    
+    <!-- Nuestra Historia -->
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <div data-aos="fade-right">
+        <h2 class="text-3xl font-bold mb-4">Nuestra Historia</h2>
+        <p class="text-gray-400">
+          En TechPageDesign, nos especializamos en crear soluciones web a medida para todo tipo de proyectos.
+          Desde landing pages hasta tiendas online y sitios corporativos, nos aseguramos de que cada página 
+          sea única, funcional y adaptada a las necesidades específicas de cada cliente.
+        </p>
+      </div>
+      <div data-aos="fade-left" class="flex justify-center">
+        <img src="https://via.placeholder.com/400x300" alt="Nuestra Historia" class="rounded-lg shadow-md w-full max-w-sm">
       </div>
     </div>
-  </section>
+
+    <!-- Misión -->
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <div data-aos="fade-right" class="flex justify-center order-2 md:order-1">
+        <img src="https://via.placeholder.com/400x300" alt="Misión" class="rounded-lg shadow-md w-full max-w-sm">
+      </div>
+      <div data-aos="fade-left" class="order-1 md:order-2">
+        <h2 class="text-3xl font-bold mb-4">Misión</h2>
+        <p class="text-gray-400">
+          Nuestra misión es crear soluciones web personalizadas y de alta calidad, utilizando las tecnologías
+          más avanzadas para ayudar a nuestros clientes a destacar en el mundo digital.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Hazla Única -->
+<section class="py-12 bg-gray-800 text-gray-200">
+  <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+    <div data-aos="fade-right">
+      <h2 class="text-3xl font-bold mb-4">Hazla Única, Hazla Tuya</h2>
+      <p>
+        Diseña tu página web exactamente como la imaginas, adaptando cada detalle a tus necesidades y estilo, 
+        para que tu presencia digital sea única y auténtica.
+      </p>
+    </div>
+    <div data-aos="fade-left">
+      <img src="https://via.placeholder.com/400x300" alt="Hazla Única" class="rounded-lg shadow-md">
+    </div>
+  </div>
+</section>
+
+<!-- Características 100% con Efecto de Conteo -->
+<section class="py-12 bg-blue-600 text-white text-center">
+  <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+    
+    <!-- Card 1 -->
+    <div class="bg-blue-500 p-6 rounded-lg shadow-md hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="100">
+      <h3 class="text-4xl font-bold text-white counter" data-target="100">0%</h3>
+      <p class="text-xl font-semibold mt-2">Personalizado</p>
+      <p class="mt-2">Diseñamos tu página web completamente a medida, adaptando cada detalle a tu identidad de marca.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-blue-500 p-6 rounded-lg shadow-md hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="300">
+      <h3 class="text-4xl font-bold text-white counter" data-target="100">0%</h3>
+      <p class="text-xl font-semibold mt-2">Optimizado</p>
+      <p class="mt-2">Creamos sitios web eficientes, rápidos y seguros para ofrecer la mejor experiencia de usuario.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-blue-500 p-6 rounded-lg shadow-md hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="500">
+      <h3 class="text-4xl font-bold text-white counter" data-target="100">0%</h3>
+      <p class="text-xl font-semibold mt-2">Dinamismo</p>
+      <p class="mt-2">Integración de animaciones e interactividad para un diseño moderno y atractivo.</p>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Soporte y Servicios -->
+<section id="soporte" class="py-12 bg-gray-900 text-gray-200 text-center">
+  <h2 class="text-3xl font-bold mb-6" data-aos="fade-right">Soporte y Servicios</h2>
+  <p class="mb-8" data-aos="fade-up">En TechPageDesign, no solo nos encargamos del diseño de tu página web.</p>
+
+  <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-4">
+    <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition" data-aos="flip-left">
+      <h3 class="text-xl font-bold text-blue-400">Soporte</h3>
+      <p class="mt-2">Incluye atención continua para resolver cualquier inconveniente relacionado con tu página web.</p>
+    </div>
+
+    <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition" data-aos="flip-up" data-aos-delay="200">
+      <h3 class="text-xl font-bold text-blue-400">Gestión de Dominios</h3>
+      <p class="mt-2">Ayudamos en la compra, configuración y vinculación de dominios para que tu sitio esté siempre disponible.</p>
+    </div>
+
+    <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition" data-aos="flip-right" data-aos-delay="400">
+      <h3 class="text-xl font-bold text-blue-400">Bases de Datos</h3>
+      <p class="mt-2">Nos encargamos de la configuración y gestión de bases de datos para asegurar el rendimiento óptimo de tu sitio.</p>
+    </div>
+  </div>
+</section>
 
   <!-- Tecnologías -->
   <section id="tecnologias" class="bg-gray-900 py-12">
@@ -80,7 +189,7 @@
   </section>
 
   <!-- Contacto -->
-<section id="contacto" class="py-12 bg-gray-800 text-white text-center">
+  <section id="contacto" class="py-12 bg-gray-800 text-white text-center">
     <h2 class="text-3xl font-bold mb-6" data-aos="fade-right">Contáctanos</h2>
     
     <div class="flex justify-center items-center gap-6">
@@ -102,9 +211,9 @@
   
   
 
-  <!-- Footer -->
+  <!-- Footer Actualizado -->
   <footer class="bg-gray-800 text-gray-400 text-center py-4" data-aos="fade-right">
-    <p>&copy; 2025 DesignWeb - Todos los derechos reservados.</p>
+    <p>&copy; 2025 TechPageDesign - Todos los derechos reservados.</p>
   </footer>
 
   <!-- AOS Script -->
@@ -115,6 +224,78 @@
       once: true
     });
   </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+
+    // Función para animar el conteo (versión más lenta)
+    function animateCounter(element) {
+      const target = +element.getAttribute('data-target');
+      let count = 0;
+      const increment = 1; // Incremento más pequeño para un conteo más lento
+      const speed = 30;    // Velocidad del conteo en milisegundos (ajustable)
+
+      const interval = setInterval(() => {
+        count += increment;
+        element.textContent = count + '%';
+
+        if (count >= target) {
+          clearInterval(interval); // Detiene el conteo al llegar al 100%
+        }
+      }, speed);
+    }
+
+    // Intersection Observer para detectar visibilidad
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCounter(entry.target);
+          observer.unobserve(entry.target); // Evita que se repita el conteo
+        }
+      });
+    }, { threshold: 0.5 }); // Inicia cuando el 50% del elemento es visible
+
+    // Aplicar el observador a cada contador
+    document.querySelectorAll('.counter').forEach(counter => {
+      observer.observe(counter);
+    });
+  });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    // Alternar menú móvil
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Scroll suave para enlaces del menú
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
+          window.scrollTo({
+            top: targetSection.offsetTop - 70, // Ajuste para la altura del navbar
+            behavior: 'smooth'
+          });
+        }
+        // Cierra el menú móvil después de hacer clic en un enlace
+        if (!mobileMenu.classList.contains('hidden')) {
+          mobileMenu.classList.add('hidden');
+        }
+      });
+    });
+  });
+</script>
 
 </body>
 </html>
